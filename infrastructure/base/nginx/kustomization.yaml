@@ -2,6 +2,7 @@
 
 resources:
   - "namespace.yaml"
+  - "chart.yaml"
   - "repository.yaml"
   - "release.yaml"
   
