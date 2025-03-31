@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: iaun-api
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: iaun-api
+  template:
+    metadata:
+      labels:
+        app: iaun-api
+    spec:
+      containers:
+      - name: iaun-api
+        image: localhost:5000/iaun-api:latest
+        ports:
+        - containerPort: 5000
+        env:
+        - name: DATABASE_URL
+          value: postgresql://myadmin:A1b2c3d4f5.@postgres-db:5432/blc
+        volumeMounts:
+        - name: app-data
+          mountPath: /app
+      volumes:
+      - name: app-data
+        hostPath:
+          path: /Users/qbex/Documents/workspace/iaun

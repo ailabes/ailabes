@@ -1,0 +1,8 @@
+apiVersion: image.toolkit.fluxcd.io/v1beta2
+kind: ImageRepository
+metadata:
+  name: iaun-api
+  namespace: flux-system
+spec:
+  image: localhost:5000/iaun-api
+  interval: 1m0s
