@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: iaun-api
-  namespace: default
+  namespace: news-blog-iaun
 spec:
   selector:
     app: iaun-api

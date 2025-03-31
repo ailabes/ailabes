@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: iaun-api
-  namespace: default
+  namespace: news-blog-iaun
 spec:
   replicas: 1
   selector:
