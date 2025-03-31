@@ -4,5 +4,6 @@ metadata:
   name: iaun-api
   namespace: flux-system
 spec:
-  image: localhost:5000/iaun-api
+  image: host.minikube.internal:5000/iaun-api
   interval: 1m0s
+  insecure: true
