@@ -1,5 +1,6 @@
 resources:
   - namespace.yaml
-  - service.yaml
-  - deployment.yaml
+  - service.
   - imagerepository.yaml
+  - deployment.yaml
+ 
