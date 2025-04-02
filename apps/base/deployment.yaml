@@ -15,7 +15,8 @@ spec:
     spec:
       containers:
       - name: iaun-api
-        image: host.minikube.internal:5000/iaun-api:latest
+        image: host.minikube.internal:5000/iaun-api
+        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 5000
         env:
