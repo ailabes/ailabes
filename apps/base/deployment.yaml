@@ -16,7 +16,7 @@ spec:
       containers:
       - name: iaun-api
         image: iaun-api:latest
-        imagePullPolicy: Never
+        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 5000
         env:
